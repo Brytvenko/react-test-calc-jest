@@ -15,7 +15,9 @@ class ButtonPanel extends React.Component {
 
   render() {
     const { result } = this.props;
-    const paintGray = (i, x) => (i < 3 && x !== "=" ? "#E0E0E0" : undefined);
+    const paintGray = (i, x) => (
+      i < 3, x < 10 && x !== "=" ? "#E0E0E0" : undefined
+    );
     const items = [
       ["AC", "x", "÷", "-"],
       ["7", "8", "9", "+"],

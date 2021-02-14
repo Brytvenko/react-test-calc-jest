@@ -24,7 +24,7 @@ class Button extends React.Component {
     const { name, color, wide } = this.props;
     const styles = {
       backgroundColor: this.isLocked(name) ? `${color}50` : color,
-      width: wide ? 'calc(50% + 2px)' : '25%',
+      width: wide ? 'calc(70% + 2px)' : '25%',
       cursor: this.isLocked(name) ? 'not-allowed' : 'pointer',
     };
     return (
@@ -51,7 +51,7 @@ Button.propTypes = {
 Button.defaultProps = {
   wide: false,
   name: '',
-  color: '#F5913E',
+  color: '#06b5fa',
   onClick: () => {},
   result: '',
 };
